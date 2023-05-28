@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Prezentacja", "Prezentacja", "{E4ECC410-E10A-4160-94CE-09C21C7BE03D}"
+	ProjectSection(SolutionItems) = preProject
+		0.0) C#.md = 0.0) C#.md
+		0.0) Aplikacja AAD.md = 0.0) Aplikacja AAD.md
+		Bogus.md = Bogus.md
+		ConsoleApp0.md = ConsoleApp0.md
+		EmailsArchive.md = EmailsArchive.md
+		README.md = README.md
+		SQLandSPO.md = SQLandSPO.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp0_After", "ConsoleApp0_After\ConsoleApp0_After.csproj", "{995D91A7-A0BF-4530-B8F5-D3C6F139859F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailsArchive", "EmailsArchive\EmailsArchive.csproj", "{40683517-D9AB-4BF7-B111-5C162A748FF5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BogusSPO", "BogusSPO\BogusSPO.csproj", "{0803CFBE-EFFA-4A91-882C-7A634ED7195E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SQLandSPO", "SQLandSPO\SQLandSPO.csproj", "{7EDD86B8-14D6-4573-A0A8-10872DBC6C57}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BogusDV", "BogusDV\BogusDV.csproj", "{AD44ACB1-6793-43ED-8D21-0E0F6DC9E478}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{995D91A7-A0BF-4530-B8F5-D3C6F139859F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{995D91A7-A0BF-4530-B8F5-D3C6F139859F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{995D91A7-A0BF-4530-B8F5-D3C6F139859F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{995D91A7-A0BF-4530-B8F5-D3C6F139859F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40683517-D9AB-4BF7-B111-5C162A748FF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40683517-D9AB-4BF7-B111-5C162A748FF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40683517-D9AB-4BF7-B111-5C162A748FF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40683517-D9AB-4BF7-B111-5C162A748FF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0803CFBE-EFFA-4A91-882C-7A634ED7195E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0803CFBE-EFFA-4A91-882C-7A634ED7195E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0803CFBE-EFFA-4A91-882C-7A634ED7195E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0803CFBE-EFFA-4A91-882C-7A634ED7195E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EDD86B8-14D6-4573-A0A8-10872DBC6C57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EDD86B8-14D6-4573-A0A8-10872DBC6C57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EDD86B8-14D6-4573-A0A8-10872DBC6C57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EDD86B8-14D6-4573-A0A8-10872DBC6C57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD44ACB1-6793-43ED-8D21-0E0F6DC9E478}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD44ACB1-6793-43ED-8D21-0E0F6DC9E478}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD44ACB1-6793-43ED-8D21-0E0F6DC9E478}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD44ACB1-6793-43ED-8D21-0E0F6DC9E478}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44C32A24-FE98-4D56-B6EE-A24E95670B31}
+	EndGlobalSection
+EndGlobal
