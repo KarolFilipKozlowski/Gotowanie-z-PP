@@ -6,9 +6,11 @@
 
 - https://github.com/pnp/pnpcore
 
-# Instrukcja
+# Koncept aplikacji
 
-x
+Z *xyz* powodu nie możemy skorzystać z innego rozwiązania niż płatny konektor, ale chcemy w cyklu dziennym synchronizować dane między SQL a SPO. 
+Pierwsze uruchomienie aplikacji ma wczytać wszystkie dane z bazy do pustej listy SPO.
+Każde następne uruchomienie aplikacji (w task scheduler) ma sprawdzać czy w dniu dzisiejszym nie powstał element w SPO i/lub SQL i przesłać go do SQL/SPO.
 
 ##
 ### by CitDev for Power Platfrom Polska
