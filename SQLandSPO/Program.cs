@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+﻿using CamlexNET;
 using Microsoft.Extensions.DependencyInjection;
 using PnP.Core.Model.SharePoint;
 using PnP.Core.QueryModel;
@@ -7,10 +7,6 @@ using SQLandSPO.Helper;
 using SQLandSPO.Models;
 using SQLandSPO.PnPModel;
 using SQLandSPO.SPOHelper;
-using System.Drawing;
-using System.Reflection;
-using System.Security.Cryptography.X509Certificates;
-using System.Xml.Linq;
 
 #region Połączenie z SQL i pobieranie danych:
 //Entity Framework to biblioteka która uproszcza operacje SQL w C#. (https://learn.microsoft.com/en-us/ef/core/, https://www.entityframeworktutorial.net/efcore/entity-framework-core.aspx).
@@ -41,7 +37,7 @@ using (var scope = host.PnPIHost.Services.CreateScope())
                                                                                    p => p.Title));
 
         //Metoda (coś jak re-używalne funkcje w PA) która zapisuje ma liście wszystkie produkty:
-        await SPOHelper.AddProducts(allProducts, myList);
+        //await SPOHelper.AddProducts(allProducts, myList);
 
         //Collaborative Application Markup Language (CAML) (https://learn.microsoft.com/en-us/sharepoint/dev/schema/query-schema):
         /*
@@ -63,7 +59,7 @@ using (var scope = host.PnPIHost.Services.CreateScope())
                                 "</Value>" +
                                 "</Eq>" +
                                 "</Where></Query></View>";
-        await SPOHelper.ShowListItems(context, camlQuery_CreatedToday, "Przykład #1");
+        //await SPOHelper.ShowListItems(context, camlQuery_CreatedToday, "Przykład #1");
 
         //Przykład #2 - pobranie elementów o kolorze X lub Z:
         string camlQuery_ColorIsYellowOrSilver = "<View><Query><Where>" +
@@ -75,7 +71,7 @@ using (var scope = host.PnPIHost.Services.CreateScope())
                                 "</Values>" +
                                 "</In>" +
                                 "</Where></Query></View>";
-        await SPOHelper.ShowListItems(context, camlQuery_ColorIsYellowOrSilver, "Przykład #2");
+        //await SPOHelper.ShowListItems(context, camlQuery_ColorIsYellowOrSilver, "Przykład #2");
 
         //Przykład #3 - pobranie elementu o ID = 1:
         string camlQuery_IDeq1 = "<View><Query><Where>" +
@@ -84,7 +80,7 @@ using (var scope = host.PnPIHost.Services.CreateScope())
                                 "<Value Type='Integer'>200</Value>" +
                                 "</Eq>" +
                                 "</Where></Query></View>";
-        await SPOHelper.ShowListItems(context, camlQuery_IDeq1, "Przykład #3");
+        //await SPOHelper.ShowListItems(context, camlQuery_IDeq1, "Przykład #3");
 
         //Przykład #4 - pobranie elementu o ID > X:
         string camlQuery_IDgtX = "<View><Query><Where>" +
@@ -93,7 +89,7 @@ using (var scope = host.PnPIHost.Services.CreateScope())
                                 "<Value Type='Counter'>290</Value>" +
                                 "</Gt>" +
                                 "</Where></Query></View>";
-        await SPOHelper.ShowListItems(context, camlQuery_IDgtX, "Przykład #4");
+        ///await SPOHelper.ShowListItems(context, camlQuery_IDgtX, "Przykład #4");
 
         //Przykład #4 - pobranie elementu utworzonych przez X:
         string camlQuery_ByXUserName = "<View><Query><Where>" +
@@ -104,10 +100,25 @@ using (var scope = host.PnPIHost.Services.CreateScope())
                                 "</Value>" +
                                 "</Eq>" +
                                 "</Where></Query></View>";
-        await SPOHelper.ShowListItems(context, camlQuery_ByXUserName, "Przykład #5");
+        //await SPOHelper.ShowListItems(context, camlQuery_ByXUserName, "Przykład #5");
         #endregion
 
-        /* camlex */
+        //Biblioteka Camlex umożliwia tworzenie CamlQuery w prostszy sposób - za pomoć C#'owego LINQu... (https://github.com/sadomovalex/camlex#quick-start):
+
+        string camlexQuery_CreatedToday = Camlex.Query().Where(w => w["Created"] == ((DataTypes.DateTime)Camlex.Today).IncludeTimeValue(false)).ToString();
+        //await SPOHelper.ShowListItems(context, $"<View>{camlexQuery_ByXUserName}</View>", "Przykład #1 (camlex)");
+
+        string camlexQuery_ColorIsYellowOrSilver = Camlex.Query().Where(w => w["Color"] == (DataTypes.Text)"Yellow" || w["Color"] == (DataTypes.Text)"Silver").ToString();
+        //await SPOHelper.ShowListItems(context, $"<View>{camlexQuery_ByXUserName}</View>", "Przykład #2 (camlex)");
+
+        string camlexQuery_IDeq1 = Camlex.Query().Where(w => w["ID"] == (DataTypes.Integer)"20").ToString();
+        //await SPOHelper.ShowListItems(context, $"<View>{camlexQuery_ByXUserName}</View>", "Przykład #3 (camlex)");
+
+        string camlexQuery_IDgtX = Camlex.Query().Where(w => w["ID"] > (DataTypes.Counter)"290").ToString();
+        //await SPOHelper.ShowListItems(context, $"<View>{camlexQuery_ByXUserName}</View>", "Przykład #4 (camlex)");
+
+        string camlexQuery_ByXUserName = Camlex.Query().Where(w => w["Author"] == (DataTypes.User)"Karol Kozłowski").ToString();
+        //await SPOHelper.ShowListItems(context, $"<View>{camlexQuery_ByXUserName}</View>", "Przykład #5 (camlex)");
 
         #region Dodanie nowych 'z dziś' z bazy SQL do SPO
         //await AddProducts(allProducts, myList);
@@ -127,7 +138,7 @@ using (var scope = host.PnPIHost.Services.CreateScope())
                                 "</Where></Query></View>",
             DatesInUtc = true
         });
-        SQLHelper.AddToSQL(adventureWorksLTContext, myList);
+        //SQLHelper.AddToSQL(adventureWorksLTContext, myList);
         #endregion
     }
 }

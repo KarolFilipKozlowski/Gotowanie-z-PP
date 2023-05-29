@@ -12,12 +12,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Camlex.NET.dll" Version="5.4.1" />
+    <PackageReference Include="Camlex.Client.dll" Version="5.4.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.16" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.16" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
     <PackageReference Include="PnP.Core" Version="1.9.0" />
     <PackageReference Include="PnP.Core.Auth" Version="1.9.0" />
+    <PackageReference Include="PnP.Framework" Version="1.12.0" />
   </ItemGroup>
 
   <ItemGroup>

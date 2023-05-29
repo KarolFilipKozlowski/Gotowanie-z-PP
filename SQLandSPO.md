@@ -5,6 +5,8 @@
 ## GutHub repos:
 
 - https://github.com/pnp/pnpcore
+- https://github.com/pnp/pnpframework
+- https://github.com/sadomovalex/camlex
 
 # Koncept aplikacji
 

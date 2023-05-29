@@ -84,7 +84,7 @@ namespace BogusDV
 
                     var bogusDVrecordItem = new Uri(createResponse.Headers.GetValues("OData-EntityId").FirstOrDefault());
 
-                    //Console.WriteLine($"Nowy element został dodany, ID elementu: {bogusDVrecordItem..Id}.");
+                    Console.WriteLine($"Nowy element został dodany, ID elementu: {bogusDVrecordItem.Segments[4]}.");
                 }
                 catch (Exception ex)
                 {
