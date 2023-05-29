@@ -368,3 +368,6 @@ FodyWeavers.xsd
 /BogusSPO/appsettings.json
 /BogusDV/appsettings.json
 /SQLandSPO/appsettings.json
+/ConsoleApp_Login/appsettings.json
+/SQLandSPO/efpt.config.json
+/SQLandSPO/efpt.config.json

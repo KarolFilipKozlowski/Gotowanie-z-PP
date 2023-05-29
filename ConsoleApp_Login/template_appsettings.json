@@ -1,0 +1,8 @@
+{
+  "PnPCore": {
+    "site": {
+      "SiteUrl": "https://contoso.sharepoint.com/sites/site",
+      "ClientId": "00000000-0000-0000-0000-000000000000"
+    }
+  }
+}

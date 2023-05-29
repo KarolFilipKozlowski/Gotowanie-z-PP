@@ -1,10 +1,12 @@
 {
-  "ConnectionStrings": {
-    "default": ""
-  },
-  "Logging": {
-    "LogLevel": {
-      "Default": "Trace"
-    }
-  }
+  "Url": "https://org123abc4d.api.crm4.dynamics.com",
+  "UserPrincipalName": "you@yourorg.onmicrosoft.com",
+  "Password": "yourPassword",
+  "Version": "9.2",
+  "ClientId": "00000000-0000-0000-0000-000000000000",
+  "RedirectUri": "http://localhost",
+  "Authority": "https://login.microsoftonline.com/organizations",
+  "TimeoutInSeconds": 120,
+  "CallerObjectId": "00000000-0000-0000-0000-000000000000",
+  "MaxRetries": 3
 }

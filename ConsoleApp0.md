@@ -164,10 +164,11 @@ Sam plik uzupełniamy treścią: ( :star: )
 
 8. Po zapisaniu ustawień uruchamiamy aplikację z pomocą `CTRL` + `F5`.
 
-9. Zapisanie aplikacja jak szablon VS:
-
+9. Zapisanie aplikacja jak szablon VS.  
 W menu Project -> Export Template, wybieramy dany projekt i z pomocą prostego generatora tworzymy szablon. W ten sposób z menu nowego projektu VS będzie można od razu rozpocząć pisanie kodu mają gotowy wzorzec.
 
-##
-### by CitDev for Power Platfrom Polska
+
+#### ----
+> Power Platform Polska | Gotowanie z PP | 31.05.2023 - > C# a komu to potrzebne - zażądanie danymi w SPO bez LC
+
 :thumbsup: [Karol Kozłowski - Citizen Developer](https://citdev.pl/)

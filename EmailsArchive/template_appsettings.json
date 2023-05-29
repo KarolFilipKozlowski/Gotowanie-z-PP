@@ -37,8 +37,8 @@
       }
     },
     "Sites": {
-      "GotowaniezPP": {
-        "SiteUrl": "https://contoso.sharepoint.com/sites/GotowaniezPP",
+      "site": {
+        "SiteUrl": "https://contoso.sharepoint.com/sites/site",
         "AuthenticationProviderName": "x509Certificate"
       }
     }

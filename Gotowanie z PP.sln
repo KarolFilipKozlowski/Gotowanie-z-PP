@@ -5,8 +5,8 @@ VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Prezentacja", "Prezentacja", "{E4ECC410-E10A-4160-94CE-09C21C7BE03D}"
 	ProjectSection(SolutionItems) = preProject
-		0.0) C#.md = 0.0) C#.md
 		0.0) Aplikacja AAD.md = 0.0) Aplikacja AAD.md
+		0.0) C#.md = 0.0) C#.md
 		Bogus.md = Bogus.md
 		ConsoleApp0.md = ConsoleApp0.md
 		EmailsArchive.md = EmailsArchive.md
@@ -23,6 +23,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SQLandSPO", "SQLandSPO\SQLandSPO.csproj", "{7EDD86B8-14D6-4573-A0A8-10872DBC6C57}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BogusDV", "BogusDV\BogusDV.csproj", "{AD44ACB1-6793-43ED-8D21-0E0F6DC9E478}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1_Login", "ConsoleApp_Login\ConsoleApp1_Login.csproj", "{9E3C8E75-6A66-442D-82E3-B5C07830E0CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,6 +52,10 @@ Global
 		{AD44ACB1-6793-43ED-8D21-0E0F6DC9E478}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD44ACB1-6793-43ED-8D21-0E0F6DC9E478}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD44ACB1-6793-43ED-8D21-0E0F6DC9E478}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E3C8E75-6A66-442D-82E3-B5C07830E0CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E3C8E75-6A66-442D-82E3-B5C07830E0CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E3C8E75-6A66-442D-82E3-B5C07830E0CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E3C8E75-6A66-442D-82E3-B5C07830E0CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -18,6 +18,7 @@
 
 3) ![SQLandSPO](https://img.icons8.com/fluency/48/database.png) [SQLandSPO](SQLandSPO.md) - synchronizowanie danych SQL - SPO
 
-##
-### by CitDev for Power Platfrom Polska
+#### ----
+> Power Platform Polska | Gotowanie z PP | 31.05.2023 - > C# a komu to potrzebne - zażądanie danymi w SPO bez LC
+
 :thumbsup: [Karol Kozłowski - Citizen Developer](https://citdev.pl/)

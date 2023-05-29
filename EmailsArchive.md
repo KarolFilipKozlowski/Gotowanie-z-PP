@@ -17,6 +17,8 @@ Aplikacja ma odczytać plik, dane w nim a następnie:
 	- zachować treść jako HTML
 	- ewentualne załączniki dodać jako załącznik elementu listy
 
-##
-### by CitDev for Power Platfrom Polska
+
+#### ----
+> Power Platform Polska | Gotowanie z PP | 31.05.2023 - > C# a komu to potrzebne - zażądanie danymi w SPO bez LC
+
 :thumbsup: [Karol Kozłowski - Citizen Developer](https://citdev.pl/)

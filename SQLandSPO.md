@@ -12,6 +12,8 @@ Z *xyz* powodu nie możemy skorzystać z innego rozwiązania niż płatny konekt
 Pierwsze uruchomienie aplikacji ma wczytać wszystkie dane z bazy do pustej listy SPO.
 Każde następne uruchomienie aplikacji (w task scheduler) ma sprawdzać czy w dniu dzisiejszym nie powstał element w SPO i/lub SQL i przesłać go do SQL/SPO.
 
-##
-### by CitDev for Power Platfrom Polska
+
+#### ----
+> Power Platform Polska | Gotowanie z PP | 31.05.2023 - > C# a komu to potrzebne - zażądanie danymi w SPO bez LC
+
 :thumbsup: [Karol Kozłowski - Citizen Developer](https://citdev.pl/)
